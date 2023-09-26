@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/layout.astro";
+import "../styles/global.css";
+import Link from "../components/link.astro";
+const title = "Home page";
+const name = "khalid";
+---
+	<Layout title={title}>
+		<h1 class="name">{name}</h1>
+		<Link link="/about" cssClass="link" content="ini bakal ke about" />
+	</Layout>
+
+<script>
+	const content = document.querySelector(".name");
+	content.addEventListener("click", () => {
+		content.innerHTML = "tes";
+	});
+</script>
