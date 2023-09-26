@@ -6,13 +6,61 @@ const title = "Home page";
 const name = "khalid";
 ---
 	<Layout title={title}>
+		<div class="header">
+			<a href="/" class="title">KHALID.</a>
+			<div class="nav">
+				<a href="#education">education</a>
+				<a href="#projects">projects</a>
+			</div>
+		</div>
+		<div class="intro">
+			<p>Hi, I'm</p>
+			<h1>Khalid Zia Rabbani</h1>
+			<p>Hello everyone, I'm Khalid Zia Rabbani, IPB University Second Year Computer Science students. Currently I'm learning Coding and Design. I have a strong interest in Information & Technology, especially Front-end Developer and Graphic Designer.</p>
+		</div>
+		<div class="education">
+			<h3>EDUCATION</h3>
+			<div class="education-path">
+
+			</div>
+		</div>
 		<h1 class="name">{name}</h1>
 		<Link link="/about" cssClass="link" content="ini bakal ke about" />
 	</Layout>
 
-<script>
-	const content = document.querySelector(".name");
-	content.addEventListener("click", () => {
-		content.innerHTML = "tes";
-	});
-</script>
+<style>
+	* {
+		text-decoration: none;
+		color: black;
+	}
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 15px;
+		padding-top: 1rem;
+	}
+	.title {
+		font-weight: bold;
+	}
+	.nav {
+		display: flex;
+		flex-direction: row;
+		gap: 3rem;
+	}
+	.intro {
+		display: flex;
+		flex-direction: column;
+		margin-top: 10rem;
+		
+	}
+	.intro h1{
+		font-family: 'Dela Gothic One', cursive;
+		font-size: 70px;
+		font-weight: 600;
+		color: aquamarine;
+		-webkit-text-stroke: 0.1px #5e5e5e;
+		margin: 0;
+	}
+
+</style>
